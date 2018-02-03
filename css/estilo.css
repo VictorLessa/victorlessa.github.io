@@ -1,0 +1,127 @@
+h1, h2, p {
+	color: white;
+}
+strong{
+	color: skyblue;
+	font-weight: 800;
+	font-style: 200px;
+}
+@media screen and (max-width: 1920px){
+#home{
+	height:100vh;
+	background-image:  url(../imagens/home.jpg);
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+.element{
+	text-align: center;
+	height: 30px;
+}
+.typed-cursor{
+	opacity: 0;
+	display: none;
+}
+#conteudo-da-home{
+	width: 100%;
+
+}
+#conteudo-perfil{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+#conteudo-informacao{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+#titulo-informacao h1{
+	font-weight: 800;
+	color: white;
+}
+#conteudo-informacao h2{
+	color: white;
+	font-weight: 600;
+}
+
+#perfil{
+	background-color: blue;
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+}
+#formacoes{
+	text-align: left;	
+}
+#formacoes strong{
+	font-weight: 700;	
+	font-size: 18px;
+}
+}
+
+@media screen and (max-device-width: 319px){
+#perfil{
+	background-color: skyblue;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
+#home{
+	min-height: 900px;
+}
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+#home{
+	min-height: 800px;
+}
+#perfil{
+	background-color: green;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
+#formacoes strong{
+	font-weight: 600;	
+	font-size: 16px;
+}
+#conteudo-informacao h2{
+	color: white;
+	font-weight: 600;
+}
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+#home{
+	min-height: 800px;
+}
+#perfil{
+	background-color: blue;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+}
+
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1919px) {
+#home{
+	min-height: 100vh;
+}
+#perfil{
+	background-color:red;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+}
+}
+
