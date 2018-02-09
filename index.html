@@ -4,12 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Victor Lessa - Desenvolvedor Web & Design Gráfico</title>
+    <!--estilos-->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo-barra-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/carregar-servicos.css">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/rolagem.js"></script>
+    <script type="text/javascript" src="js/link-cor.js"></script>
 <script type="text/javascript">
 $(function(){
       $(".element").typed({
@@ -23,10 +31,51 @@ $(function(){
 </script>
   </head>
   <body>
+	  <nav class="nav navbar-fixed-top menu-fixed" style="position: absolute; width: 100%;">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	</div>
+   	<div class="collapse navbar-collapse" id="menu">
+		<ul style="width: auto; margin-right: 70px; margin-left: 30px;" class=" menu navbar-nav">
+      <li><a href="#home" class="scroll" style="color: skyblue;">Home</a></li>
+      <li><a href="#section2" class="scroll" >Meus Trabalhos</a></li>
+      <li><a href="#section3" class="scroll" >Serviços</a></li>
+      <li><a href="#section5" class="scroll" >Habilidades</a></li>
+		</ul>
+	</div>
+   </nav>
+    <nav style="display: fixed;" class="nav navbar navbar-fixed-top  navbar-inverse menu-que-vai-aparecer" style="position: absolute; width: 100%;">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu1">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	</div>
+   	<div class="collapse navbar-collapse" id="menu1">
+		<ul class=" menu navbar-nav">
+			<li><a href="#home" class="scroll" id="aba_home">Home</a></li>
+			<li><a href="#section2" class="scroll" id="aba_trabalhos">Meus Trabalhos</a></li>
+			<li><a href="#section3" class="scroll" id="aba_servicos">Serviços</a></li>
+			<li><a href="#section5" class="scroll" id="aba_habilidades">Habilidades</a></li>
+		</ul>
+	</div>
+   </nav>
     <div class="container-fluid" id="home">
+		
       <div class="row" id="conteudo-da-home">
-        <div class="col-md-6 no-space" id="conteudo-perfil" >
-         <div id="perfil"></div>
+        <div class="col-md-6" id="conteudo-perfil" >
+         <div id="perfil">
+           <img width="100%" src="imagens/perfil.png">
+         </div>
         </div>
         <div class="col-md-6" id="conteudo-informacao">
           <div class="row" id="titulo-informacao">
@@ -45,14 +94,226 @@ $(function(){
             <p><strong>Udemy</strong> - Curso de PHP 7, com carga horaria de 18 horas</p>
             <p><strong>Prepara Cursos</strong> - Auto Cad, 3D Max, com carga horaria de 20 horas</p>
           </div>
+          <div class="row  contato">
+            <ul id="contato" class="nav ">
+              <li><a href="https://www.behance.net/VictorLessa" target="_blank"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://github.com/VictorLessa" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/victor.camara.35" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
       </div>
       </div>
     </div>
-
+    <div class="container-fluid" id="section2">
+      <div class="titulo">
+          <h1>Meus Trabalhos</h1>
+          <div style="width: 200px; height: 3px; background-color: skyblue; margin:0 auto;"></div>
+      </div>
+      <div class="row" id="portifolio">
+        <div class="container">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-sm-4 no-space">
+                <div class="grid">
+					          <a href="" data-toggle="modal" data-target="#janela1">
+                  		<img src="imagens/advocacia.png">		
+					          </a>
+                </div>
+              </div>
+              <div class="col-sm-4 no-space">
+                <div class="grid">
+                  <a href="" data-toggle="modal" data-target="#janela2">
+                    <img src="imagens/cha-revelacao.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4 no-space">
+                <div class="grid">
+                  <img width="100%;" src="imagens/advocacia.png">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 no-space">
+                <div class="grid">
+                  <img src="imagens/advocacia.png">
+                </div>
+              </div>
+              <div class="col-sm-4 no-space">
+                <div class="grid">
+                  <img src="imagens/advocacia.png">
+                </div>
+              </div>
+              <div class="col-sm-4 no-space1"> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+      <div class="container-fluid" id="section3">
+        <div class="titulo">
+          <h1>Meus Serviços</h1>
+          <div style="width: 180px; height: 3px; background-color: skyblue; margin:0 auto;"></div>
+        </div>
+          <div class="row" id="servicos">
+            <div class="container">
+              <div class="row" id="server">    
+                <div class="col-md-4 space-servico">
+                  <div class="row">
+                    <div class="col-lg-12 img_design">
+                      <img width="50%;" src="imagens/design.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>Design Gráfico</h2>
+                      <p style="height: 50px;">Querendo criar uma identidade visual para o seu negocio? Entre em contato e faça um orçamento</p>
+                    </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-lg-12"> 
+                       <div class="progress" style="background-color: #282631; margin-bottom: 30px; height: 40px;">
+                        <div class=" progress-bar-info design" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                         <div class="porcentagem">
+                           <p style="padding-top: 10px">80%</p>
+                         </div>
+                        </div>
+                      </div>             
+                    </div>           
+                  </div>
+                </div>
+                <div class="col-md-4 space-servico">
+                  <div class="row">
+                    <div class="col-lg-12 img_desenvolvimento">
+                      <img width="50%;" src="imagens/desenvolvedor.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>Desenvolvedor Web</h2>
+                      <p style="height: 50px;">Querendo criar um site para sua empressa ou tem uma ideia e queira ajuda para desenvolver? Entre em contato e faça um orçamento</p>
+                    </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-lg-12"> 
+                       <div class="progress" style="background-color: #282631; margin-bottom: 30px; height: 40px;">
+                        <div class=" progress-bar-danger desenvolvimento" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                         <div class="porcentagem">
+                           <p style="padding-top: 10px">90%</p>
+                         </div>
+                        </div>
+                      </div>             
+                    </div>           
+                  </div>
+                </div>
+                <div class="col-md-4 space-servico">
+                  <div class="row">
+                    <div class="col-lg-12 img_commerce">
+                      <img width="50%;" src="imagens/commerce.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>E-Commerce</h2>
+                      <p style="height: 50px;">Querendo criar seu proprio ou site do seu negócio físico? Entre em contato e faça um orçamento</p>
+                    </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-lg-12"> 
+                       <div class="progress" style="background-color: #282631; margin-bottom: 30px; height: 40px;">
+                        <div class=" progress-bar-success commerce" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                         <div class="porcentagem">
+                           <p style="padding-top: 10px">100%</p>
+                         </div>
+                        </div>
+                      </div>             
+                    </div>           
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+	  	<div class="container-fluid" id="section4">
+	  	  <div class="row">
+          <ul id="bar-icon" class="nav ">
+              <li><a href="https://www.behance.net/VictorLessa" target="_blank"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://github.com/VictorLessa" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/victor.camara.35" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            </ul>  
+        </div>
+	  	</div>
+      <div class="container-fluid" id="section5">
+        <div class="titulo">
+          <h1>Habilidades</h1>
+          <div style="width: 180px; height: 3px; background-color: skyblue; margin:0 auto;"></div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <ul id="habilidades" class="nav">
+                <li><a href=""><i class="devicon-html5-plain"></i></a><br><span>HTML5</span></li>
+                <li><a href=""><i class="devicon-javascript-plain"></i></a><br><span>JavaScript</span></li>
+                <li><a href=""><i class="devicon-bootstrap-plain"></i></a><br><span>Bootstrap</span></li>
+                <li><a href=""><i class="devicon-php-plain"></i></a><br><span>PHP</span></li>
+                <li><a href=""><i class="devicon-photoshop-plain"></i></a><br><span>Photoshop</span></li>
+                <li><a href=""><i class="devicon-illustrator-plain"></i></a><br><span>Illustrator</span></li>
+                <li><a href=""><i class="devicon-ubuntu-plain"></i></a><br><span>Ubuntu</span></li>
+                <li><a href=""><i class="devicon-jquery-plain"></i></a><br><span>JQuery</span></li>
+                <li><a href=""><i class="devicon-css3-plain"></i></a><br><span>CSS3</span></li>
+                <li><a href=""><i class="devicon-mysql-plain"></i></a><br><span>MySql</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container-fluid">
+        <h4>Desenvolvido por - <strong>Victor Lessa</strong></h4>
+      </footer>
+<!-- modal windol	  -->
+	  <form class="modal fade" id="janela1">
+	  	<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+					 <span>&times;</span>
+					</button>
+            <h5 class="modal-title">Advocacia</h5>
+				</div>
+				<div class="modal-body">
+					<img width="100%;" src="imagens/adv.png">
+				</div>
+				<div class="modal-footer">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	  </form>
+    <form class="modal fade" id="janela2">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+           <span>&times;</span>
+          </button>
+            <h5 class="modal-title">Chá de Revelação</h5>
+        </div>
+        <div class="modal-body">
+          <img width="100%;" src="imagens/cha-revelacao.png">
+        </div>
+        <div class="modal-footer">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/animacao-menu.js"></script>
+    <script type="text/javascript" src="js/barra-servicos.js"></script>
   </body>
 </html>
