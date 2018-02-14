@@ -17,9 +17,9 @@ function tirar_fixed(){
 			$('.menu-que-vai-aparecer').each(function(){
 				var scroll = $(document).scrollTop();
 				if(scroll > 35){
-					$('.menu-que-vai-aparecer').addClass('menu-aparecendo');
+					$(this).addClass('menu-aparecendo');
 				}else{
-					$('.menu-que-vai-aparecer').removeClass('menu-aparecendo');
+					$(this).removeClass('menu-aparecendo');
 				}
 			});
 		});
