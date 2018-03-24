@@ -1,0 +1,134 @@
+
+body{
+	margin:0;
+	background: url("../img/movimento.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	padding: 40px 40px 0;
+	display: flex;
+	z-index: 3;
+	-webkit-box-pack:justify;
+	justify-content: space-between;
+}
+.logo{
+	position: relative;
+	z-index: 1000;
+
+	align-items: center;
+}
+.info_menu{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 6.4rem;
+}
+.link{
+	display: webkit box;
+	display: ms flexbox;
+	/*display: flex;*/
+	display: none;
+	margin-right: 6.4rem;
+}
+.bar{
+	
+	float: right;
+	height: 22px;
+	width: 50px;
+	cursor: pointer; 
+	position: relative;
+}
+::after, ::before{
+	box-sizing: border-box;
+}
+.bar-top{
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: white;
+	right: 0;
+}
+.bar-top-active{
+	transform: rotate(45deg);
+	height: 3px;
+	width: 100%;
+}
+.bar-bottom{
+	position: absolute;
+	right: 0;
+	height: 3px;
+	background-color: white;
+	width: 100%;
+	bottom: 0;
+}
+.bar-bottom-active{
+	transform: rotate(-45deg);
+	height: 3px;
+	width: 100%;
+}
+/*MAIN DO MENU*/
+main{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	z-index: 2;
+	background-color: blue;
+	-webkit-transform: translate3d(0,-100%,0);
+	transform: translate3d(0,-100%,0);
+	transition: .6s;
+	opacity: 0;
+}
+main-active{
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	opacity: 1;
+	transition: .6s;
+}
+.menu{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	float: right;
+	width: 50%;
+	height: 100px;
+}
+.menu li{
+	list-style-type:none;
+	font-size: 6rem;
+	color: white;
+}
+.menu li a{
+	text-decoration: none;
+	color: inherit;
+}
+/*FIM MAIN DO MENU*/
+.home{
+	z-index: 1;
+	height: 100vh;
+	width: 100%;
+}
+@media (min-width: 381px) and (max-width: 768px){
+.link{
+	display: none;
+}
+
+}
+@media (min-width: 769px) and (max-width: 1920px){
+.link{
+	display: flex;
+}
+
+}
