@@ -24,6 +24,9 @@ header{
 
 	align-items: center;
 }
+.logo img{
+	width: 60px;
+}
 .info_menu{
 	position: relative;
 	display: flex;
@@ -123,6 +126,9 @@ main-active{
 @media (min-width: 339px) and (max-width: 768px){
 header{
 	padding: 20px 40px 0;
+}
+.logo img{
+	width: 40px;
 }
 .link{
 	display: none;
