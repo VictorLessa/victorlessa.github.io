@@ -1,5 +1,5 @@
 // JavaScript Document
-var firtscroll = 0;
+/*var firtscroll = 0;
 $(document).ready(function(){
 	$(window).scroll(function(){
 		
@@ -11,4 +11,4 @@ $(document).ready(function(){
 					}
 		firtscroll = top;
 });
-});
+});*/

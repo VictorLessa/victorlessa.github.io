@@ -1,10 +1,18 @@
 
 body{
 	margin:0;
+
+
+
+}
+.fundo{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
 	background: url("../img/movimento.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 header{
 	width: 100%;
@@ -14,7 +22,7 @@ header{
 	color: white;
 	padding: 20px 40px 0;
 	display: flex;
-	z-index: 3;
+	z-index: 4;
 	-webkit-box-pack:justify;
 	justify-content: space-between;
 }
@@ -42,9 +50,10 @@ header{
 }
 .link i{
 	font-size: 2rem;
-	z-index: 2;
+	z-index: 3;
 }
-.bar{
+.barr{
+	z-index: 3;
 	float: right;
 	height: 22px;
 	width: 50px;
@@ -114,7 +123,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	z-index: 2;
+	z-index: 3;
 	background-color: blue;
 	-webkit-transform: translate3d(0,-100%,0);
 	transform: translate3d(0,-100%,0);
@@ -126,7 +135,7 @@ header{
 	transform: translate3d(0,0,0);
 	opacity: 1;
 	transition: .6s;
-	z-index: 2;
+	z-index: 3;
 	
 }
 .menu{
@@ -192,43 +201,66 @@ header{
 
 	}
 /*FIM MAIN DO MENU*/
-.conteudo{
-	z-index: 1;
-	height: 100vh;
-	width: 100%;
-	display: inline-flex;
-	flex-wrap: wrap;
-	align-content: center;
-	align-items: center;
-	
-}
+
 /*barra do menu lateral*/
 .btl{
 	position: fixed;
 	height: 100px;
 	width: 100%;
+	z-index: 2;
 	bottom: 40px;
-	display: inline-flex;
-	flex-direction: column; 
+	display: flex; 
 	align-content: center;
 	align-items: center;
 	justify-content: center;
 }
+
 .btl ul{
-	display: block;
+	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-content: center;
 	width: 100px;
-	height: auto;
-	transform: rotate(90deg);
+
+	transform: rotate(-90deg);
 }
-.btl ul li {
+
+.bar {
 	list-style-type: none;
-	margin: 25px auto;
+	margin: 10px;
 	height: 3px;
-	width: 40%;
+	width: 30%;
+	transition: .6s;
+	cursor: pointer;
 	background-color: white;
+}
+.active{
+	transition: .6s;
+	list-style-type: none;
+	height: 3px;
+	width: 60%;
+	background-color: white;
+	}
+/*fim estilo do menu lateral*/
+
+.home{
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+.web{
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+.sobre{
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+.contato{
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
 }
 
 /*fim menu lateral*/
@@ -247,6 +279,7 @@ header{
 }
 /*main menu*/
 	.main{
+		
 		text-align: center;
 	}
 	.menu{
@@ -265,7 +298,6 @@ header{
 	height: 100vh;
 	width: 100px;
 	display: flex; 
-	align-content: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -279,7 +311,7 @@ header{
 	list-style-type: none;
 	margin: 40px 20px auto;
 	height: 3px;
-	width: 50%;
+	width: 25%;
 	background-color: white;
 }
 }
@@ -304,6 +336,7 @@ header{
 	margin-right: 6.4rem;
 }
 	.menu li{
+		
 		text-align: center;
 		margin: 10px;
 		font-weight: 700;
@@ -317,7 +350,6 @@ header{
 	height: 100vh;
 	width: 100px;
 	display: flex; 
-	align-content: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -326,11 +358,20 @@ header{
 	height: auto;
 	transform: rotate(0deg);
 }
-.btl ul li {
+.bar {
 	list-style-type: none;
-	margin: 40px 20px auto;
+	cursor: pointer;
+	margin: 30px;
 	height: 3px;
-	width: 50%;
+	transition: .6s;
+	width: 30%;
 	background-color: white;
 }
+	.active{
+	transition: .6s;
+	list-style-type: none;
+	height: 3px;
+	width: 60%;
+	background-color: white;
+	}
 }

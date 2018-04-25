@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 	}
 
-	$('.bar').on('click tap', function(){
+	$('.barr').on('click tap', function(){
 	    togglemenu();
 	  });
 
