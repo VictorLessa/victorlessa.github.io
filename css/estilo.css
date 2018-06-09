@@ -7,6 +7,13 @@ Estudante de Ciencia da computação no IME_UERJ
 .bg-primary{
     background-color: #5ba0b0 !important;
 }
+.navbar .navbar-nav .nav-link:not(.btn){
+    display: flex;
+    justify-content: center;
+}
+.nav-link span{
+    margin-left: 10px;
+}
 .habilidades{
     display: flex;
     justify-content: center;
@@ -16,6 +23,7 @@ Estudante de Ciencia da computação no IME_UERJ
 }
 .habilidades li{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .habilidades span{
@@ -24,13 +32,29 @@ Estudante de Ciencia da computação no IME_UERJ
 .habilidades li i{
     font-size: 35px;
     margin:10px 15px 15px;
+    transition: .6s;
+}
+.habilidades li i:hover{
+    color:#2CA8FF;
+    transform: scale3d(1.5,1.5,1.5);
+    transition: .6s;
 }
 .nav-item i{
-    font-size: 20px;
+    font-size: 25px;
 }
-.page-header.page-header-small{
+/*.page-header.page-header-small{
     height: 70vh;
     max-height: 960px;
+}*/
+.description{
+    margin-bottom: 0 !important;
+}
+.description a{
+    color:#2CA8FF;
+}
+.content{
+    margin-top: 10px !important;
+    margin-bottom: 70px !important;
 }
 @media screen and (max-width: 991px){
     .sidebar-collapse .navbar-collapse:before{
