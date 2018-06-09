@@ -1,0 +1,40 @@
+/*Autor: Victor Camara Lessa
+Estudante de Ciencia da computação no IME_UERJ
+*/
+.page-header[filter-color="orange"]{
+    background: linear-gradient(20deg, rgba(44, 44, 44, 0.2), rgba(91, 160, 176, 1));
+}
+.bg-primary{
+    background-color: #5ba0b0 !important;
+}
+.habilidades{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.habilidades li{
+    display: flex;
+    flex-direction: column;
+}
+.habilidades span{
+    font-size: 10px;
+}
+.habilidades li i{
+    font-size: 35px;
+    margin:10px 15px 15px;
+}
+.nav-item i{
+    font-size: 20px;
+}
+.page-header.page-header-small{
+    height: 70vh;
+    max-height: 960px;
+}
+@media screen and (max-width: 991px){
+    .sidebar-collapse .navbar-collapse:before{
+        background: linear-gradient(20deg, rgba(44, 44, 44, 0.2), rgba(91, 160, 176, 1))
+
+    } 
+}
