@@ -47,6 +47,7 @@ Estudante de Ciencia da computação no IME_UERJ
     max-height: 960px;
 }*/
 .description{
+    font-family: sans-serif;
     margin-bottom: 0 !important;
 }
 .description a{
